@@ -1,4 +1,4 @@
-def add(e, b):
+def addition(e, b):
     return e + b
 
 
