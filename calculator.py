@@ -1,5 +1,5 @@
-def addition(e, b):
-    return e + b
+def addition(e, p):
+    return e + p
 
 
 
