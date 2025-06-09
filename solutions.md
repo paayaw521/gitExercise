@@ -2,22 +2,26 @@
 
 ## Exercise 1
   - [ ] Who created git? and what is the essence of git.
+  ### **Answer**
    Linus Torvalds
    It is a version control system. It allows developers to keep track of changes in source code
 
 ## Exercise 2
   - [ ] What is the difference between git, gitlab and github?
+  ### **Answer**
   Github is owned by microsoft and available to the public. Gitlab on the other hand is privately owned
   Git is on the command line . Github is a web based version of git
 
 
 ## Exercise 3
   - [ ] Apart from git, is there any other version control system? If there is, kindly list them.
+  ### **Answer**
   Yes
   Mercurial, Monotone
 
 ## Exercise 4
   - [ ] What does `git init` and `git status` do?
+  ### **Answer**
   git init is used to initialize a net git repository or reinitialize an existing one
   git status is used to display the state of the working directory
 
@@ -25,7 +29,10 @@
 
 ## Exercise 5
   - [ ] What is a `commit` in git. Explain and show examples of a commit in the terminal.
+  ### **Answer**
   git commit saves the current version of a project into the repository
+
+  ### 
 
 $ git commit -m "First Commit"
 [master (root-commit) 7ec1d6b] First Commit
@@ -42,12 +49,15 @@ your configuration file:
 ## Exercise 6
   - [ ] In git, there is a way to ignore file, how is this done.
   - [ ] Create some files and intentionally ignore them.
+  ### **Answer**
   You create a gitignore file
+
 
 
 ## Exercise 7
   - [ ] What does `git log` do? Show examples of `git log` in the terminal.
-   git log is used to display a list of commits in a Git repository. It shows the commit history in reverse chronological order by default
+  ### **Answer**
+   'git log is used to display a list of commits in a Git repository. It shows the commit history in reverse chronological order by default'
 
    $ git log
 commit 7ec1d6b135e0c18ec1ddf2d16e3a0f14a9c5bdd3 (HEAD -> PaaYaw)
@@ -60,24 +70,30 @@ Date:   Tue Jun 3 09:05:23 2025 +0000
 
 ## Exercise 8
   - [ ] What does it mean to do `git add`.
+  ### **Answer**
   git add is used to add changes in your working directory to the staging area
 
 
 ## Exercise 9
   - [ ] What is a staging area in git and how do you get items into the staging area.
   - [ ] Illustrate this in the terminal by moving an untracked file to the tracked state and then staging area.
+
+  ### **Answer**
   The staging area is an intermediate area where changes are gathered before they are committed to the repository.
   You get items there with the git add command
 
 
 ## Exercise 10
   - [ ] How do you commit in git with the message on the same line?
+  ### **Answer**
   $ git commit -m "First Commit"
 
 
 
 ## Exercise 11
   - [ ] What is the difference between the `pull`,`push` and `fetch` command in git.
+
+  ### **Answer**
   The git fetch command is used to fetch all changes from the remote repository to the local repository without making any changes to the current working directory. 
 
   The git pull command is used to fetch all changes from the remote repository and automatically merge or rebase them into your current working directory
@@ -87,10 +103,14 @@ Date:   Tue Jun 3 09:05:23 2025 +0000
 
 ## Exercise 12
   - [ ] What command do you run in git, if you want to see more information about a remote in git. Illustrate this in the terminal and try and understand the output. Please contact Caleb, if you do not.
+
+  ### **Answer**
    git remote show remote
 
 ## Exercise 13
   - [ ] What is the difference between rebase and merge in git. Illustrate with examples.
+
+  ### **Answer**
   Merging is a way to combine the changes from one branch into another.
   Rebasing is a process of moving or combining a sequence of commits to a new base commit. It allows you to take the changes from one branch and reapply them on top of another branch.
 
@@ -99,6 +119,7 @@ Date:   Tue Jun 3 09:05:23 2025 +0000
     - [ ] `git checkout` has another alias. What is it?
     - [ ] Show that both checkout and its alias are doing the same thing in the terminal.
 
+### **Answer**
   The git checkout command is used to switch branches or restore working tree files in Git
    git switch
   $ git switch testBranch
@@ -107,6 +128,8 @@ Date:   Tue Jun 3 09:05:23 2025 +0000
 
 ## Exercise 15
 - [ ] What are tags in git, and what types of tags are there?
+
+### **Answer**
 Tags in Git are used to mark specific points in a repository's history
 annotated tags and lightweight tags.
 
@@ -114,11 +137,15 @@ annotated tags and lightweight tags.
 - [ ] Do you know that, you can delete a branch in git?
   - [ ] Create a branch and delete it.
   - [ ] Wait....what is the difference between deleteing with `-d` and `-D` arguments in git?
+
+  ### **Answer**
   git branch -d is for deleting branches that are fully merged in its upstream branch or to HEAD
   git branch -D deletes the branch even if it's not merged.
 
 ## Exercise 17
 - [ ] Can you change a branch name? If yes what is the command? Illustrate this in the terminal.
+
+### **Answer**
 git branch -m old-branch-name new-branch-name
 
 
@@ -126,6 +153,8 @@ git branch -m old-branch-name new-branch-name
 - [ ] What does it mean to revert a commit resetting to a previous commit?
 - [ ] What does it to reset to a previous commit?
 - [ ] What is the difference between the reset and revert?
+
+### **Answer**
 reverting a commit creates a new commit that undoes the changes done by the previous commit
 resetting moves the current commit pointer to an earlier commit (Like how you delete a node in a linked list)
 
